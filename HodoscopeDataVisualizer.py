@@ -1,6 +1,6 @@
-loc = input("enter file path \n Example: D:\\Folder\\filename.csv")
+loc = input("Enter file path or press enter to use the file provided with the code\n\nExample file path: D:\\Folder\\filename.csv\n\n")
 if loc == "":
-	loc = "D:\\ICD\\Gruppo_14.csv"
+	loc = "Example.csv"
 file = open(loc,"r", encoding='utf-8-sig')
 RowArray = []
 col = 0
