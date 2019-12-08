@@ -53,8 +53,8 @@ def start():
                 while True:
                     index += 1
                     try:
-                        # print(str(indexesRays[index][0]) + " " + str(indexesRays[index][1]) + " " + str(indexesRays[index+1][0]) + " " + str(indexesRays[index + 1][1]) + " " + str(abs(indexesRays[index][0] - indexesRays[index][0])))
-                        if abs(indexesRays[index][0] - indexesRays[index + 1][0]) <= 1 and abs(indexesRays[index][1] - indexesRays[index + 1][1]):
+                        print(str(indexesRays[index][0]) + " " + str(indexesRays[index][1]) + " " + str(indexesRays[index+1][0]) + " " + str(indexesRays[index + 1][1]) + " " + str(abs(indexesRays[index][0] - indexesRays[index+1][0])))
+                        if abs(indexesRays[index][0] - indexesRays[index + 1][0]) <= 1 and abs(indexesRays[index][1] - indexesRays[index + 1][1]) <= 1:
                             rayCounter += 1
                         elif rayCounter < 4:
                             rayCounter = 0
